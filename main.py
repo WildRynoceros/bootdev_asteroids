@@ -45,7 +45,7 @@ def main():
                 exit()
             for shot in shots:
                 if asteroid.isColliding(shot):
-                    asteroid.kill()
+                    asteroid.split()
                     shot.kill()
         # player.update(dt)
 
